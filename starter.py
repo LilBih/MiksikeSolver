@@ -1,6 +1,3 @@
-import hacker
-import hacker_comp
-
 from solver import ComparationHacker, MulAddDivDecHacker
 from driverstuff import driver, NoSuchElementException
 
