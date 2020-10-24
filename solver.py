@@ -34,8 +34,6 @@ class HackerBase:
                     print('Successfully loaded element ' + i + ' (' + self.ElemsXPath[i] + ')')
             return True
 
-# test
-
 
 class MulAddDivDecHacker(HackerBase):
     ElemsXPath = {
