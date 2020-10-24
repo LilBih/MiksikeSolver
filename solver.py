@@ -153,6 +153,9 @@ class ComparationHacker(HackerBase):
         sample2 = driver.find_element_by_xpath(self.ElemsXPath['sample2']).text
 
         while endStatus != 'Час сплив!':
+            if not (sample1.isdigit() and sample2.isdigit()):
+                break
+
             if sample1 != "" and sample2 != "":
                 sol = self.solver(sample1, sample2)
 
